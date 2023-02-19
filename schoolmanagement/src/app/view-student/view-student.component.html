@@ -1,0 +1,23 @@
+<h3 class="text-center mt-10 text-success mb-30 p-30">
+  Doctor Detail of Id: {{ student.studentId }} are
+</h3>
+<div class="text-center text-bold p-20">
+  <div>
+    <label> <b> Student Id: </b></label> {{ student.studentId }}
+  </div>
+  <div>
+    <label> <b> Student Name: </b></label> {{ student.studentName }}
+  </div>
+  <div>
+    <label> <b> Email: </b></label> {{ student.email }}
+  </div>
+  <div>
+    <label> <b> Address: </b></label> {{ student.address }}
+  </div>
+</div>
+<br />
+<br />
+<div class="text-center">
+  <button (click)="list()" class="btn btn-info">Back to Student's List</button>
+</div>
+<br />

@@ -1,0 +1,56 @@
+<table class="table table-hover text-bold">
+  <thead class="table-light">
+    <tr>
+      <th class="text-center">Student Id</th>
+      <th class="text-center">Student Name</th>
+      <th class="text-center">Email</th>
+      <th class="text-center">Address</th>
+      <th class="text-center">Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let students of student" class="text-bold">
+      <td class="text-center">{{ students.studentId }}</td>
+      <td class="text-center">{{ students.studentName }}</td>
+      <td class="text-center">{{ students.email }}</td>
+      <td class="text-center">{{ students.address }}</td>
+      <td class="text-center">
+        <button
+          class="btn btn-success"
+          (click)="updateStudentRecord(students.studentId)"
+        >
+          Update
+        </button>
+        <button
+          class="btn btn-danger"
+          style="margin-left: 10px"
+          (click)="deleteStudentRecord(students.studentId)"
+        >
+          Delete
+        </button>
+        <button
+          class="btn btn-info"
+          style="margin-left: 10px"
+          (click)="studentDetails(students.studentId)"
+        >
+          View
+        </button>
+      </td>
+      <!-- <td>
+            <button
+              (click)="updateHospitalRecord(hospitals.hospitalId)"
+              class="btn btn-info"
+            >
+              Update
+            </button>
+            <button
+              (click)="deleteHospitalRecord(hospitals.hospitalId)"
+              class="btn btn-danger"
+              style="margin-left: 10px"
+            >
+              Delete
+            </button>
+          </td> -->
+    </tr>
+  </tbody>
+</table>

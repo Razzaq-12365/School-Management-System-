@@ -1,0 +1,24 @@
+.text-logo
+{
+    color: #709091 !important;
+    font-weight: 500;
+    /* font-weight: 700; */
+}
+.vertical-spacer
+{
+    border-right: 2px solid lightgray;
+}
+.nav-item a
+{
+    color: #615d54 !important;
+    font-weight: 500;
+}
+/* .nav-link active a */
+#active__link
+{
+    color: #000 !important;
+}
+.nav-item a:hover
+{
+    color: #000 !important;
+}
